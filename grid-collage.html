@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage with CSS Grid</title>
+
+    <style>
+        .container{
+            display:grid;
+            grid-template-rows:repeat(6, 1fr);
+            grid-template-columns:repeat(3, 1fr);
+            margin:5px;
+            padding:10px;
+            border:5px solid black;
+            width:50%;
+            margin:0 auto;
+            grid-template-areas:
+            "A B C"
+            "A B C"
+            "D B F"
+            "D E F"
+            "G E H"
+            "G E H";
+        }
+
+        .A1{
+            grid-area:A;
+        }
+
+        .A2{
+            grid-area:B;
+        }
+
+        .A3{
+            grid-area:C;
+        }
+
+        .A4{
+            grid-area:D;
+        }
+
+        .A5{
+            grid-area:E;
+        }
+
+        .A6{
+            grid-area:F;
+        }
+
+        .A7{
+            grid-area:G;
+        }
+
+        .A8{
+            grid-area:H;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="A1">
+            <img src="grid-collage-pictures/Img1.PNG">
+        </section>
+
+        <section class="A2">
+            <img src="grid-collage-pictures/10.PNG">
+        </section>
+
+        <section class="A3">
+            <img src="grid-collage-pictures/12.PNG">
+        </section>
+
+        <section class="A4">
+            <img src="grid-collage-pictures/8.PNG">
+        </section>
+
+        <section class="A5">
+            <img src="grid-collage-pictures/11.PNG">
+        </section>
+
+        <section class="A6">
+            <img src="grid-collage-pictures/13.PNG">
+        </section>
+
+        <section class="A7">
+            <img src="grid-collage-pictures/9.PNG">
+        </section>
+
+        <section class="A8">
+            <img src="grid-collage-pictures/14.PNG">
+        </section>
+    </div>
+</body>
+</html>
